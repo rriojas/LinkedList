@@ -17,7 +17,7 @@ namespace LinkedList
         return;
       }
       //Add the value to the linked list
-      Node node = new Node(int.Parse(txtValue.Text));
+      Node node = new Node(int.Parse(txtValue.Text) , txtName.Text, txtPhoneNumber.Text);
       list.Add(node);//int.Parse(txtValue.Text));
       //Display the linked list in a message box
       MessageBox.Show(list.ToString());

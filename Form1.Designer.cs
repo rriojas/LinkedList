@@ -34,6 +34,10 @@
       button2 = new Button();
       btnContains = new Button();
       btnRemove = new Button();
+      txtName = new TextBox();
+      label2 = new Label();
+      txtPhoneNumber = new TextBox();
+      label3 = new Label();
       SuspendLayout();
       // 
       // label1
@@ -96,11 +100,51 @@
       btnRemove.UseVisualStyleBackColor = true;
       btnRemove.Click += btnRemove_Click;
       // 
+      // txtName
+      // 
+      txtName.Font = new Font("Segoe UI", 20F);
+      txtName.Location = new Point(272, 103);
+      txtName.Name = "txtName";
+      txtName.Size = new Size(212, 43);
+      txtName.TabIndex = 7;
+      // 
+      // label2
+      // 
+      label2.AutoSize = true;
+      label2.Font = new Font("Segoe UI", 20F);
+      label2.Location = new Point(161, 103);
+      label2.Name = "label2";
+      label2.Size = new Size(88, 37);
+      label2.TabIndex = 6;
+      label2.Text = "Name";
+      // 
+      // txtPhoneNumber
+      // 
+      txtPhoneNumber.Font = new Font("Segoe UI", 20F);
+      txtPhoneNumber.Location = new Point(272, 152);
+      txtPhoneNumber.Name = "txtPhoneNumber";
+      txtPhoneNumber.Size = new Size(212, 43);
+      txtPhoneNumber.TabIndex = 9;
+      // 
+      // label3
+      // 
+      label3.AutoSize = true;
+      label3.Font = new Font("Segoe UI", 20F);
+      label3.Location = new Point(161, 152);
+      label3.Name = "label3";
+      label3.Size = new Size(92, 37);
+      label3.TabIndex = 8;
+      label3.Text = "Phone";
+      // 
       // Form1
       // 
       AutoScaleDimensions = new SizeF(7F, 15F);
       AutoScaleMode = AutoScaleMode.Font;
       ClientSize = new Size(800, 450);
+      Controls.Add(txtPhoneNumber);
+      Controls.Add(label3);
+      Controls.Add(txtName);
+      Controls.Add(label2);
       Controls.Add(btnRemove);
       Controls.Add(btnContains);
       Controls.Add(button2);
@@ -121,5 +165,9 @@
     private Button button2;
     private Button btnContains;
     private Button btnRemove;
+    private TextBox txtName;
+    private Label label2;
+    private TextBox txtPhoneNumber;
+    private Label label3;
   }
 }
