@@ -38,6 +38,9 @@
       label2 = new Label();
       txtPhoneNumber = new TextBox();
       label3 = new Label();
+      btnCount = new Button();
+      txtZipCode = new TextBox();
+      label4 = new Label();
       SuspendLayout();
       // 
       // label1
@@ -136,11 +139,43 @@
       label3.TabIndex = 8;
       label3.Text = "Phone";
       // 
+      // btnCount
+      // 
+      btnCount.Font = new Font("Segoe UI", 20F);
+      btnCount.Location = new Point(526, 201);
+      btnCount.Name = "btnCount";
+      btnCount.Size = new Size(159, 43);
+      btnCount.TabIndex = 10;
+      btnCount.Text = "Count";
+      btnCount.UseVisualStyleBackColor = true;
+      btnCount.Click += btnCount_Click;
+      // 
+      // txtZipCode
+      // 
+      txtZipCode.Font = new Font("Segoe UI", 20F);
+      txtZipCode.Location = new Point(272, 201);
+      txtZipCode.Name = "txtZipCode";
+      txtZipCode.Size = new Size(212, 43);
+      txtZipCode.TabIndex = 12;
+      // 
+      // label4
+      // 
+      label4.AutoSize = true;
+      label4.Font = new Font("Segoe UI", 20F);
+      label4.Location = new Point(128, 204);
+      label4.Name = "label4";
+      label4.Size = new Size(125, 37);
+      label4.TabIndex = 11;
+      label4.Text = "Zip Code";
+      // 
       // Form1
       // 
       AutoScaleDimensions = new SizeF(7F, 15F);
       AutoScaleMode = AutoScaleMode.Font;
       ClientSize = new Size(800, 450);
+      Controls.Add(txtZipCode);
+      Controls.Add(label4);
+      Controls.Add(btnCount);
       Controls.Add(txtPhoneNumber);
       Controls.Add(label3);
       Controls.Add(txtName);
@@ -169,5 +204,8 @@
     private Label label2;
     private TextBox txtPhoneNumber;
     private Label label3;
+    private Button btnCount;
+    private TextBox txtZipCode;
+    private Label label4;
   }
 }

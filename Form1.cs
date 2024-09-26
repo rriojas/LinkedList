@@ -17,7 +17,7 @@ namespace LinkedList
         return;
       }
       //Add the value to the linked list
-      Node node = new Node(int.Parse(txtValue.Text) , txtName.Text, txtPhoneNumber.Text);
+      Node node = new Node(int.Parse(txtValue.Text), txtName.Text, txtPhoneNumber.Text, txtZipCode.Text );
       list.Add(node);//int.Parse(txtValue.Text));
       //Display the linked list in a message box
       MessageBox.Show(list.ToString());
@@ -51,6 +51,11 @@ namespace LinkedList
       {
         MessageBox.Show("Value does not exist in the linked list");
       }
+    }
+
+    private void btnCount_Click(object sender, EventArgs e)
+    {
+      MessageBox.Show("The linked list contains " + list.Count() + " node(s)");
     }
   }
 }

@@ -15,7 +15,7 @@ namespace LinkedList
       head = null;
     }
     
-    public void Add(Node newNode)//int value)
+    public void Add(Node newNode)
     {
       //Node newNode = new Node(value);
       //If the list is empty, add the new node as the head
@@ -65,10 +65,9 @@ namespace LinkedList
         current = current.Next;
       }
     }
-
     public bool Contains(int value)
     {
-      Node current = head;
+      Node? current = head;
       while (current != null)
       {
         if (current.Value == value)
@@ -79,11 +78,21 @@ namespace LinkedList
       }
       return false;
     }
-
+    public int Count()
+    {
+      int count = 0;
+      Node? current = head;
+      while (current != null)
+      {
+        count++;
+        current = current.Next;
+      }
+      return count;
+    }
     public override string ToString()
     {
       string result = "";
-      Node current = head;
+      Node? current = head;
       while (current != null)
       {
         result += current.ToString() + " ";
